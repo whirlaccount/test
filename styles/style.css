@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Tagesschrift&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1230px;
+    margin: 0 auto;
+    font-family: 'Tagesschrift',sans-serif;
+    font-size: 16px;
+    border: double black 12px;
+    padding: 15px;
+    margin-top: 7px;
+}
+.name{
+    font-family:'Quintessential',sans-serif ;
+    font-weight: 600;
+    font-size: 52px;
+}
+hr{
+    margin-top: 7px;
+    border: none;
+    border-top: 3px solid #333;
+}
+header{
+    margin-top: 5px;
+}
+.updates{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.title__img{
+    max-width: 55px;
+}
+.forcast{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.forcast__pic{
+    max-width: 30px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main__news{
+    display: flex;
+    flex-flow: column;
+}
+.pope__news{
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+}
+.pope__img{
+    min-width: 1100px;
+}
+.pope__dead{
+    font-size: 13px;
+    margin: 20px;
+    line-height: 1.8;
+}
+.subnews{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 20px;
+}
+.subnews1, .subnews2, .subnews3{
+    max-width: 340px;
+    background-color: #eae6ca;
+    padding: 10px;
+    border-radius: 15px;
+}
+.subnews__title{
+    font-size: 24px;
+}
+.img__subnews1,.img__subnews2,.img__subnews3{
+    max-width: 320px;
+}
+.subnews2{
+    max-width: 420px;
+}
+.img__subnews2{
+    max-width: 400px;
+}
+@media screen and (max-width:1200px) {
+    .pope__img{
+        display: none;
+    }
+    .subnews{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    .subnews2{
+        max-width: 340px;
+        margin-top:  20px;
+        margin-bottom: 20px;
+    }
+    .img__subnews2{
+        max-width: 320px;
+    }
+    .date{
+        display: none;
+    }
+}
